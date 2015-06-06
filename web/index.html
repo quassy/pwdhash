@@ -1,6 +1,5 @@
 <html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-<meta name="google-site-verification" content="tsC40Go6u6ldH1pmeafOZhKJc7v1dxGQ6lYzxqlkN2I">
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <!--* Remote PwdHash Form
       * An HTML form that calls the JavaScript implementation of PwdHash
       * Version 1.0 Copyright (C) Stanford University 2004-2005
@@ -8,75 +7,53 @@
       * Distributed under the BSD License
       * See http://crypto.stanford.edu/PwdHash for more info.
       *-->
-  <title>PwdHash</title>
-  <script src="pwdhash/md5.js" type="text/javascript"></script>
-  <script src="pwdhash/pwdhash.js" type="text/javascript"></script>
-  <script src="pwdhash/hashed-password.js" type="text/javascript"></script>
-  <script src="pwdhash/domain-extractor.js" type="text/javascript"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico">
+    <title>PwdHash Fork</title>
+    <script src="pwdhash/md5.js" type="text/javascript"></script>
+    <script src="pwdhash/pwdhash.js" type="text/javascript"></script>
+    <script src="pwdhash/hashed-password.js" type="text/javascript"></script>
+    <script src="pwdhash/domain-extractor.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
-<body onload="Init();">
-<table style="margin: 3em 1em 1em 1em" align="right"><tbody><tr><td>
-<form name="hashform" action="error.html" method="POST" onsubmit="setTimeout('GenerateToTextField()', 0); return false;">
-<table id="theHashForm"><tbody><tr>
-<td class="stepList">
-<div class="step" id="theSiteDomain">
-<h3>Site Address</h3>
-<p><input value="http://www.example.com/" name="domain" type="text"></p>
-</div>
-<div class="step" id="theSitePassword">
-<h3>Site Password</h3>
-<p><input name="sitePassword" type="password"></p>
-</div>
-</td>
-</tr>
-<tr>
-<td class="stepList" colspan="2">
-<div class="step" id="theHashedPassword">
-<h3>Hashed Password</h3>	
-  <span id="theGeneratePanel">
-    <input value="Press Generate" disabled="disabled" name="hashedPassword" type="text">
-    <input name"submitbutton"="" value="Generate" type="submit">
-  </span>
-<p align="center"><a id="theToggleModeLink" href="javascript:ToggleAdvancedMode()"></a></p>
-</div>
-</td>
-</tr>
-</tbody></table>
-</form></td></tr><tr><td><div class="footer">Version 0.8 (<a href="https://crypto.stanford.edu/PwdHash/RemotePwdHash/">more versions</a>)</div>
-<div class="footer">Tip: You can save this page to disk.</div>
-</td></tr></tbody></table>
+<body onload="Init(); document.getElementById('domain').focus();">
 
-<p align="center"><img src="files/stanford_seal64.gif" alt="Stanford" align="middle" width="64" height="64"> </p>
+<form name="hashform" method="POST" onsubmit="setTimeout('Generate()', 0); return false;">
+    <div>
+        <label for="domain">Address</label>
+        <input  id="domain" type="text" placeholder="http://www.example.com/" onkeyup="Generate();" />
+    </div>
+    <div>
+        <label for="sitePassword">Password</label>
+        <input  id="sitePassword" type="password" placeholder="Password" onkeyup="Generate();" />
+    </div>
+    <div>
+        <label for="hashedPassword">PwdHash</label>
+        <input  id="hashedPassword" type="text" placeholder="Type to generate" onclick="this.select()" readonly="readonly"/>
+    </div>
+</form>
 
-      <h1 align="center"><font color="#0000FF" face="Arial">
-         Stanford PwdHash
-	    </font></h1>
-	            
-<div id="theexplanation">
+<h1>PwdHash Fork</h1>
 <p>
-PwdHash generates theft-resistant passwords.
+<a href="http://crypto.stanford.edu/PwdHash/">PwdHash</a> (originally by Stanford) generates theft-resistant passwords.
 The PwdHash browser extension invisibly generates these passwords when it is installed in your browser.
 You can activate this protection by pressing F2 before you type
 your password, or by choosing passwords that start with <tt>@@</tt>.
-If you don't want to install PwdHash on your computer, you can generate the passwords right here.
-</p><ul>
-<li>Visit the <a href="http://crypto.stanford.edu/PwdHash/">Stanford project website</a>.</li>
-<li>Install
-<a href="https://addons.mozilla.org/en-US/firefox/addon/pwdhash/">PwdHash for Firefox</a>. It has been ported to <a href="https://chrome.google.com/extensions/detail/dnfmcfhnhnpoehjoommondmlmhdoonca">Chrome</a> and <a href="http://www.coredump.gr/pwdhash-for-opera/">Opera</a>.</li>
-<li>Read the <a href="http://crypto.stanford.edu/PwdHash/pwdhash.pdf">USENIX Security Symposium 2005 paper</a> (PDF).</li>
-<li>Send us <a href="http://crypto.stanford.edu/PwdHash/feedback.php">feedback</a>.</li>
+If you don't want to install PwdHash on your computer, you can generate the passwords right here (and even save this page to disk to use it locally).
+</p>
+<p>Read the <a href="http://crypto.stanford.edu/PwdHash/pwdhash.pdf">USENIX Security Symposium 2005 paper</a> (PDF)</p>
+<p>Browser extensions</p>
+<ul>
+    <li><a href="https://addons.mozilla.org/en-US/firefox/addon/pwdhash/">Firefox</a></li>
+    <li><a href="https://chrome.google.com/extensions/detail/dnfmcfhnhnpoehjoommondmlmhdoonca">Chrome</a></li>
+    <li><a href="http://www.coredump.gr/pwdhash-for-opera/">Opera</a></li>
 </ul>
-</div>
-
-<div style="text-align: center">
- Contributors: <a href="http://www.blakeross.com/">Blake Ross</a>,
+<p>
+    Original contributors:
+    <a href="http://www.blakeross.com/">Blake Ross</a>,
     <a href="http://www.collinjackson.com/">Collin Jackson</a>,
-      Nicholas Miyake,
-        <a href="http://crypto.stanford.edu/%7Edabo/">Dan Boneh</a> and <a href="http://theory.stanford.edu/people/jcm/home.html">John C. 
-	    Mitchell</a>
-</div>
-
+    Nicholas Miyake,
+    <a href="http://crypto.stanford.edu/%7Edabo/">Dan Boneh</a> and <a href="http://theory.stanford.edu/people/jcm/home.html">John C. 
+    Mitchell</a>
+</p>
 
 </body></html>

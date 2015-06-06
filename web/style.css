@@ -100,3 +100,15 @@ div.footer
   font-color: red;
 }
 
+label, input {
+font-size: 200%;
+margin-bottom: -1px;
+}
+label {
+display:inline-block;
+text-align:right;
+width:10vw;
+}
+input {
+width:30vw;
+}
