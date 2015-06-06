@@ -1,6 +1,6 @@
 <html><head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-<!--* Remote PwdHash Form
+    <!--* Remote PwdHash Form
       * An HTML form that calls the JavaScript implementation of PwdHash
       * Version 1.0 Copyright (C) Stanford University 2004-2005
       * Contributors: Dan Boneh, Collin Jackson, John Mitchell, Nick Miyake, and Blake Ross
@@ -20,7 +20,7 @@
 <form name="hashform" method="POST" onsubmit="setTimeout('Generate()', 0); return false;">
     <div>
         <label for="domain">Address</label>
-        <input  id="domain" type="text" placeholder="http://www.example.com/" onkeyup="Generate();" />
+        <input  id="domain" type="text" placeholder="http://www.example.com/" onkeyup="Generate();" autofocus="autofocus"/>
     </div>
     <div>
         <label for="sitePassword">Password</label>
