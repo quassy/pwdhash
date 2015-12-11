@@ -18,6 +18,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+body:target {
+  background-color:#f0f0f0;
+}
 .form > div {
   display: flex;
   flex-direction: row;
