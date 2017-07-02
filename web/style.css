@@ -43,7 +43,8 @@ label {
   color: #999;
   min-width: 6em;
 }
-input {
+input, select {
+  background: transparent;
   border: none;
   border-bottom: 1px solid #999;
   font-size: medium;
