@@ -1,44 +1,41 @@
 <!DOCTYPE html>
-<!--xhtml5-->
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <!--PwdHash Fork
       An HTML form that calls the JavaScript implementation of PwdHash by Standford University
       *-->
   <title>PwdHash Fork</title>
-  <script src="pwdhash/md5.js" type="text/javascript"></script>
-  <script src="pwdhash/pwdhash.js" type="text/javascript"></script>
-  <script src="pwdhash/hashed-password.js" type="text/javascript"></script>
-  <script src="pwdhash/domain-extractor.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" type="image/x-icon" href="favicon.png" />
+  <!--<script src="panel.js" type="text/javascript"></script>-->
+  <script src="script/md5.js" type="text/javascript"></script>
+  <script src="script/domain-extractor.js" type="text/javascript"></script>
+  <script src="script/hashed-password.js" type="text/javascript"></script>
+  <script src="script/browser.js" type="text/javascript"></script>
 </head>
-
-<body onload="Init(); document.getElementById('domain').focus();" id="grey">
+<body id="grey">
   <div>
-    <form class="form" name="hashform" method="POST" onsubmit="setTimeout('Generate()', 0); return false;">
+    <form>
       <div>
         <label for="domain">Address</label>
-        <input id="domain" type="text" placeholder="https://www.example.com/" onkeyup="Generate();" autofocus="autofocus" />
+        <input id="domain" type="text" placeholder="https://www.example.com/" autofocus="autofocus" />
       </div>
       <div>
-        <label for="sitePassword">Password</label>
-        <input id="sitePassword" type="password" placeholder="Password" onkeyup="Generate();" />
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Password" />
       </div>
       <div>
-        <label for="hashedPassword">PwdHash</label>
-        <input id="hashedPassword" type="text" placeholder="Type to generate" onclick="this.select()" readonly="readonly" />
+        <label for="hash">PwdHash</label>
+        <input id="hash" type="text" placeholder="Type to generate" readonly="readonly" />
       </div>
     </form>
 
     <p>
-      <a href="http://crypto.stanford.edu/PwdHash/">PwdHash</a> (by Stanford) generates passwords resistant to theft and phishing by hashing a combination of the sites address and your password. It is available as browser extensions (<a href="https://addons.mozilla.org/en-US/firefox/addon/pwdhash/">Firefox</a>,
-      <a href="https://chrome.google.com/extensions/detail/dnfmcfhnhnpoehjoommondmlmhdoonca">Chrome</a>, <a href="http://www.coredump.gr/pwdhash-for-opera/">Opera &lt;12</a>), apps (<a href="https://play.google.com/store/apps/details?id=com.uploadedlobster.PwdHash&hl=de">Android</a>,
+      <a href="https://crypto.stanford.edu/PwdHash/">PwdHash</a> (by Stanford) generates passwords resistant to theft and phishing by hashing a combination of the sites address and your password. It is available as browser extensions (<a href="https://addons.mozilla.org/en-US/firefox/addon/pwdhash/">Firefox</a>,
+      <a href="https://chrome.google.com/extensions/detail/dnfmcfhnhnpoehjoommondmlmhdoonca">Chrome</a>, <a href="https://www.coredump.gr/pwdhash-for-opera/">Opera &lt;12</a>), apps (<a href="https://play.google.com/store/apps/details?id=com.uploadedlobster.PwdHash&hl=de">Android</a>,
       <a href="https://itunes.apple.com/us/app/keygrinder/id354763605">iOS</a>, <a href="https://github.com/mgutekunst/WP8-PwdHash">Windows</a>), scripts (<a href="https://github.com/kizzx2/pwdhash.rb">Ruby</a>, <a href="https://pypi.python.org/pypi/pwdhash.py">Python</a>) or a simple page like this which uses Javascript. You can even save this page to use it locally.
     </p>
   </div>
 </body>
-
 </html>
