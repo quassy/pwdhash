@@ -8,7 +8,8 @@
  * See http://crypto.stanford.edu/PwdHash for more info.
  * Requires the Javascript MD5 library, available here: http://pajhome.org.uk/crypt/md5
  *
- * Version 2.0 modified by quassy
+ * Version 2.0 Copyright (C) quassy 2015-2017
+ * Distributed under the BSD License
  */
 
 var SPH_kPasswordPrefix = "@@";

@@ -15,12 +15,16 @@
     "default_panel": "index.html"
   },
 
+  "options_ui": {
+    "page": "options.html"
+  },
+  
   "permissions": ["storage", "tabs", "activeTab"],
 
   "commands": {
     "_execute_sidebar_action": {
       "suggested_key": {
-        "default": "F2"
+        "default": "F4"
       }
     }
   }

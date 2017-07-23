@@ -1,0 +1,1 @@
+This directory contains old releases of Stanford PwdHash for several platforms.
