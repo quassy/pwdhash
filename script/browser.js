@@ -32,7 +32,7 @@ function generate()
  * Initialize page with default hashing parameters and add listeners to generate
  */
 initForm = function () {
-  if (typeof chrome != "undefined") {
+  if (typeof chrome != "undefined" && typeof chrome.tabs != "undefined") {
     chrome.tabs.query({'active': true}, function (tabs) {
       document.getElementById("domain").value = (new SPH_DomainExtractor()).extractDomain(tabs[0].url);
       document.getElementById("password").focus();
@@ -72,7 +72,7 @@ initForm = function () {
 }
 
 window.addEventListener("load", initForm);
-if (typeof chrome != "undefined") {
+if (typeof chrome != "undefined" && typeof chrome.tabs != "undefined") {
   chrome.tabs.onActivated.addListener(initForm);
   chrome.tabs.onUpdated.addListener(initForm);
 }
