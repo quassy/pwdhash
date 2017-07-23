@@ -3,9 +3,14 @@
 
 [PwdHash by Cambridge](https://www.cl.cam.ac.uk/~dl551/pwdhash/) is a proof-of-concept alteration of the original Stanford PwdHash, but with a number of improvements that fix some of the weaknesses of the original. PwdHash-PoC uses the Forge implementation of PBKDF2-SHA512 to generate hashes.
 
-This version of PwdHash is both a web extension for common browsers as well a simple web page. You can install it as an add-on or just save the whole page locally.
+This version of PwdHash is both a web extension for common browsers (like [Firefox](https://addons.mozilla.org/de/developers/addon/pwdhash-sidebar)) as well a [simple web page](https://quassy.github.io/pwdhash/). You can install it as an add-on or just save the whole page locally.
 
-# Authors
+## Screenshots
+
+![Enter your password to generate a hash for the respective page.](_screenshots/generate_hash.png)
+![Use the sidebar menu or press F4 to open the PwdHash Sidebar.](_screenshots/open_sidebar.png)
+
+## Authors
 This software was created by quassy and is released under the BSD licence.
 
 It is based on the previous work of several authors:  

@@ -5,7 +5,6 @@
 html, body {
   min-height: 100%;
   min-height: 100vh;
-  font-family: Roboto1, Roboto, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -32,7 +31,6 @@ form > div {
 }
 label, input, select {
   padding: .5em;
-  font-family: Roboto1, Roboto, sans-serif;
   font-size: 16px;
   line-height: 24px;
   box-sizing: border-box;
@@ -58,4 +56,11 @@ input {
   min-width: 12em;
   flex-grow: 1;
   height: auto !important;
+}
+input:focus {
+  color: #229Dd7;
+  border-bottom-color: #229Dd7;
+}
+a {
+  color: #229Dd7;
 }
