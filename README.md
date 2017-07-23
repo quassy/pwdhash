@@ -3,7 +3,7 @@
 
 Not yet supported: _[PwdHash by Cambridge](https://www.cl.cam.ac.uk/~dl551/pwdhash/) is a proof-of-concept alteration of the original Stanford PwdHash, but with a number of improvements that fix some of the weaknesses of the original. PwdHash-PoC uses the Forge implementation of PBKDF2-SHA512 to generate hashes._
 
-This version of PwdHash is both a web extension for common browsers (like [Firefox](https://addons.mozilla.org/de/developers/addon/pwdhash-sidebar)) as well a [simple web page](https://quassy.github.io/pwdhash/). You can install it as an add-on or just save the whole page locally.
+This version of PwdHash is both a web extension for common browsers (like [Firefox](https://addons.mozilla.org/de/firefox/addon/pwdhash-sidebar/, Chrome and soon Edge) as well a [simple web page](https://quassy.github.io/pwdhash/). You can install it as an add-on or just save the whole page locally.
 
 ## Screenshots
 
