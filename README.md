@@ -5,6 +5,16 @@ Not yet supported: _[PwdHash by Cambridge](https://www.cl.cam.ac.uk/~dl551/pwdha
 
 This version of PwdHash is both a web extension for common browsers (like [Firefox](https://addons.mozilla.org/de/firefox/addon/pwdhash-sidebar/), Chrome and soon Edge) as well a [simple web page](https://quassy.github.io/pwdhash/). You can install it as an add-on or just save the whole page locally.
 
+## Usage
+
+**Web**: You can just use the web version, alternatively press `Ctrl`+`S`, save the whole page locally and use it offline. Enter an address and a password. After pressing return on the password field, the hash should be copied to your clipboard.
+
+**Firefox**: Make sure the button ![](icon_16.png) is added to your toolbar, click it or press `F8` to open the toolbar menu. The address is prefilled (but can be modified). After pressing return on the password field, the hash is copied to your clipboard. Alternatively you can press `Ctrl`+`F8` to open the sidebar.
+
+**Chrome** (unpublished): Click on the button ![](icon_16.png) or press `Alt`+`P` to open the toolbar menu. The address is prefilled (but can be modified). After pressing return on the password field, the hash is copied to your clipboard.
+
+**Edge** (unpublished): Click on the button ![](icon_16.png) to open the toolbar menu. The address is prefilled (but can be modified). After pressing return on the password field, the hash is copied to your clipboard.
+
 ## Screenshots
 
 ![Enter your password to generate a hash for the respective page by opening the sidebar by pressing Ctrl+F8](_screenshots/firefox-sidebar.png)
