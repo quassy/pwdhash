@@ -29,28 +29,27 @@ function generate()
 }
 
 /*
- * Get the URL / domain from the currently active tabs
- */
-getTabDomain = function () {
-  browser.tabs.query({'active': true}, function (tabs) {
-    document.getElementById("domain").value = (new SPH_DomainExtractor()).extractDomain(tabs[0].url);
-    document.getElementById("password").focus();
-  });
-}
-
-/*
  * Initialize page with default hashing parameters and add listeners to generate
  */
 initForm = function () {
-  document.getElementById("domain").value = "";
+  if (typeof browser.tabs != "undefined") {
+    browser.tabs.query({'active': true}, function (tabs) {
+      document.getElementById("domain").value = (new SPH_DomainExtractor()).extractDomain(tabs[0].url);
+      document.getElementById("password").focus();
+    });
+  }
+  else {
+    document.getElementById("domain").value = "";
+    document.getElementById("domain").focus();
+  }
+  
   document.getElementById("password").value = "";
   document.getElementById("hash").value = "";
-  document.getElementById("domain").focus();
 
   document.getElementById("domain").addEventListener("keyup", generate);
   document.getElementById("password").addEventListener("keyup", generate); 
-
-  getTabDomain();
 }
+
 window.addEventListener("load", initForm);
 browser.tabs.onActivated.addListener(initForm);
+browser.tabs.onUpdated.addListener(initForm);
