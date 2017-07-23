@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "PwdHash Sidebar",
   "description": "Generate per-site passwords in a sidebar.",
-  "version": "1.0",
+  "version": "2.0",
   "applications": {
     "gecko": {
       "strict_min_version": "54.0a1"
@@ -15,10 +15,6 @@
     "default_panel": "index.html"
   },
 
-  "options_ui": {
-    "page": "options.html"
-  },
-  
   "permissions": ["storage", "tabs", "activeTab"],
 
   "commands": {

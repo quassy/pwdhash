@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>PwdHash Sidebar settings</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+</head>
+<body>
+  <div>
+    <label for="algo">Algorithm</label>
+    <select name="algo" disabled="disabled">
+      <option value="standford" selected="selected">Stanford (MD5)</option>
+      <option value="cambridge">Cambridge (PBKDF2)</option>
+      <option value="experimental">Experimental (scrypt)</option>
+    </select>
+  </div>
+  <div>
+    <label for="salt">Salt</label>
+    <input name="salt" type="text" placeholder="ChangeMe" />
+  </div>
+  <div>
+    <label for="iterations">Salt</label>
+    <input name="iterations" type="number" min="1000" value="5000" />
+  </div>
+  <div>
+    <label for="open_key">Open Sidebar</label>
+    <div>
+      <select name="open_mod" disabled="disabled">
+        <option value="" style="color:#ccc;" selected="selected" disabled="disabled">none</option>
+        <option value="">Ctrl</option>
+        <option value="">Alt</option>
+        <option value="">Cmd</option>
+      </select>
+      <span>+</span>
+      <input name="open_key" type="text" placeholder="F4" value="F4" autofocus="autofocus" disabled="disabled" />
+    </div>
+  </div>
+  <div>
+    <label for="copy_key">Copy Hash</label>
+    <div>
+      <select name="copy_mod">
+        <option value="" style="color:#ccc;" selected="selected">none</option>
+        <option value="">Ctrl</option>
+        <option value="">Alt</option>
+        <option value="">Cmd</option>
+      </select>
+      <span>+</span>
+      <input name="copy_key" type="text" placeholder="F3" autofocus="autofocus" />
+    </div>
+  </div>
+</body>
+</html>

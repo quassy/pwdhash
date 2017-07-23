@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>PwdHash Web</title>
+  <meta name="description" content="An HTML form that calls the JavaScript implementation of PwdHash by Standford University">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+  <script src="script/md5.js" type="text/javascript"></script>
+  <script src="script/domain-extractor.js" type="text/javascript"></script>
+  <script src="script/hashed-password.js" type="text/javascript"></script>
+  <script src="script/browser.js" type="text/javascript"></script>
+</head>
+<body>
+  <form id="pwdhash">
+    <div>
+      <label for="domain">Address</label>
+      <input id="domain" type="text" placeholder="https://www.example.com/" autofocus="autofocus" />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Password" />
+    </div>
+    <div>
+      <label for="hash">PwdHash</label>
+      <input id="hash" type="text" placeholder="Type to generate" readonly="readonly" />
+    </div>
+  </form>
+  <a href="https://github.com/quassy/pwdhash/blob/gh-pages/README.md">Readme</a>
+</body>
+</html>
