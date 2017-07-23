@@ -60,6 +60,7 @@ input {
 input:focus {
   color: #229Dd7;
   border-bottom-color: #229Dd7;
+  outline: none;
 }
 a {
   color: #229Dd7;

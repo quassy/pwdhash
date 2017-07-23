@@ -32,8 +32,8 @@ function generate()
  * Initialize page with default hashing parameters and add listeners to generate
  */
 initForm = function () {
-  if (typeof browser.tabs != "undefined") {
-    browser.tabs.query({'active': true}, function (tabs) {
+  if (typeof chrome != "undefined") {
+    chrome.tabs.query({'active': true}, function (tabs) {
       document.getElementById("domain").value = (new SPH_DomainExtractor()).extractDomain(tabs[0].url);
       document.getElementById("password").focus();
     });
@@ -47,9 +47,32 @@ initForm = function () {
   document.getElementById("hash").value = "";
 
   document.getElementById("domain").addEventListener("keyup", generate);
-  document.getElementById("password").addEventListener("keyup", generate); 
+  document.getElementById("password").addEventListener("keyup", generate);
+  
+  // Jump to next field on enter
+  document.getElementById("domain").addEventListener("keydown", function (e) {
+    if (e.which === 13) {
+      document.getElementById("password").focus();
+    }
+  });
+  document.getElementById("password").addEventListener("keydown", function (e) {
+    if (e.which === 13) {
+      document.getElementById("hash").focus();
+      document.getElementById("hash").select();
+      if (document.execCommand('copy')) {
+        window.close();
+      }
+    }
+  });
+  document.getElementById("hash").addEventListener("keydown", function (e) {
+    if (e.which === 13) {
+      window.close();
+    }
+  });
 }
 
 window.addEventListener("load", initForm);
-browser.tabs.onActivated.addListener(initForm);
-browser.tabs.onUpdated.addListener(initForm);
+if (typeof chrome != "undefined") {
+  chrome.tabs.onActivated.addListener(initForm);
+  chrome.tabs.onUpdated.addListener(initForm);
+}
