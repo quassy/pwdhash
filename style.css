@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
 }
 form > div {
   display: flex;
@@ -29,39 +29,38 @@ form > div {
   justify-content: center;
   max-width: 40em;
 }
-label, input, select {
-  padding: .5em;
+label, input, select, p {
+  padding: 4px;
+  margin: 4px;
   font-size: 16px;
   line-height: 24px;
   box-sizing: border-box;
+  background: transparent;
+
 }
 option {
   padding: 0 .5em;
   line-height: 24px;
 }
 label {
-  display: inline-block;
-  text-align: right;
-  text-transform: uppercase;
-  font-size: small;
-  line-height: 24px;
   color: #999;
-  min-width: 96px;
+  font-variant: small-caps;
+  text-align: right;
+  text-transform: lowercase;
+  min-width: 100px;
 }
 input {
-  background: transparent;
   border: none;
   border-bottom: 1px solid #999;
-  font-size: medium;
   min-width: 12em;
   flex-grow: 1;
   height: auto !important;
 }
-input:focus {
+input:focus, a {
   color: #229Dd7;
   border-bottom-color: #229Dd7;
   outline: none;
 }
-a {
-  color: #229Dd7;
+footer {
+  text-align: center;
 }
