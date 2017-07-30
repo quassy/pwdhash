@@ -1,0 +1,51 @@
+{
+  "extensionName": {
+    "message": "PwdHash-Sidebar"
+  },
+
+  "extensionDescription": {
+    "message": "Erzeuge Seiten-spezifische Passwörter in einer Box"
+  },
+
+ "addressLabel": {
+    "message": "Adresse"
+  },
+ "addressPlaceholder": {
+    "message": "https://www.beispiel.com/"
+  },
+  "passwordLabel": {
+    "message": "Passwort"
+  },
+  "passwordPlaceholder": {
+    "message": "Passwort"
+  },
+  "pwdhashLabel": {
+    "message": "PwdHash"
+  },
+  "pwdhashPlaceholder": {
+    "message": "Zum Erzeugen tippen"
+  },
+  "readmeText": {
+    "message": "Liesmich"
+  },
+  "readmeTitle": {
+    "message": "Lerne wie diese Erweiterung funktioniert"
+  },
+  "readmeUrl": {
+    "message": "https://github.com/quassy/pwdhash/blob/gh-pages/README.md"
+  },
+
+  "actionPopup": {
+    "message": "PwdHash-Popup (F8)"
+  },
+  "actionSidebar": {
+    "message": "PwdHash-Sidebar (Strg+F8)"
+  },
+
+  "shortcutPopup": {
+    "message": "Öffne PwdHash-Popup"
+  },
+  "shortcutSidebar": {
+    "message": "Öffne PwdHash-Sidebar"
+  }
+}

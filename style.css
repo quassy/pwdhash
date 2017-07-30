@@ -36,7 +36,6 @@ label, input, select, p {
   line-height: 24px;
   box-sizing: border-box;
   background: transparent;
-
 }
 option {
   padding: 0 .5em;
@@ -60,7 +59,4 @@ input:focus, a {
   color: #229Dd7;
   border-bottom-color: #229Dd7;
   outline: none;
-}
-footer {
-  text-align: center;
 }

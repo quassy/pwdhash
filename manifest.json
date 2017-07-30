@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "PwdHash Sidebar",
-  "description": "Generate per-site passwords in a box",
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
   "icons": {
     "16": "icon_16.png",
     "32": "icon_32.png",
@@ -11,16 +11,17 @@
   "homepage_url": "https://quassy.github.io/pwdhash/",
   "version": "2.2.0",
   "permissions": ["tabs", "activeTab"],
-  
+  "default_locale": "en",
+
   "browser_action": {
     "default_icon": "favicon.ico",
-    "default_title" : "PwdHash Popup (F8)",
+    "default_title" : "__MSG_actionPopup__",
     "browser_style": true,
     "default_popup": "index.html"
   },
   "sidebar_action": {
     "default_icon": "favicon.ico",
-    "default_title" : "PwdHash Sidebar (Ctrl+F8)",
+    "default_title" : "__MSG_actionSidebar__",
     "default_panel": "index.html"
   },
   "commands": {
@@ -28,13 +29,13 @@
       "suggested_key": {
         "default": "F8"
       },
-      "description": "Open PwdHash Popup"
+      "description": "__MSG_shortcutPopup__"
     },
     "_execute_sidebar_action": {
       "suggested_key": {
         "default": "Ctrl+F8"
       },
-      "description": "Open PwdHash Sidebar"
+      "description": "__MSG__shortcutSidebar__"
     }
   }
 }

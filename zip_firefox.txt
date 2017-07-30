@@ -1,0 +1,15 @@
+zip _releases/pwdhash-sidebar.zip -@ -FS < zip_firefox.txt
+_locales/de/messages.json
+_locales/en/messages.json
+script/browser.js
+script/domain-extractor.js
+script/hashed-password.js
+script/md5.js
+favicon.ico
+icon_16.png
+icon_32.png
+icon_64.png
+index.html
+manifest.json
+README.md
+style.css

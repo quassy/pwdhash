@@ -1,0 +1,51 @@
+{
+  "extensionName": {
+    "message": "PwdHash Sidebar"
+  },
+
+  "extensionDescription": {
+    "message": "Generate per-site passwords in a box"
+  },
+
+ "addressLabel": {
+    "message": "Address"
+  },
+ "addressPlaceholder": {
+    "message": "https://www.example.com/"
+  },
+  "passwordLabel": {
+    "message": "Password"
+  },
+  "passwordPlaceholder": {
+    "message": "Password"
+  },
+  "pwdhashLabel": {
+    "message": "PwdHash"
+  },
+  "pwdhashPlaceholder": {
+    "message": "Type to generate"
+  },
+  "readmeText": {
+    "message": "Readme"
+  },
+  "readmeTitle": {
+    "message": "Learn how this extension works"
+  },
+  "readmeUrl": {
+    "message": "https://github.com/quassy/pwdhash/blob/gh-pages/README.md"
+  },
+
+  "actionPopup": {
+    "message": "PwdHash Popup (F8)"
+  },
+  "actionSidebar": {
+    "message": "PwdHash Sidebar (Ctrl+F8)"
+  },
+
+  "shortcutPopup": {
+    "message": "Open PwdHash Popup"
+  },
+  "shortcutSidebar": {
+    "message": "Open PwdHash Sidebar"
+  }
+}
