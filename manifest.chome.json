@@ -9,7 +9,7 @@
   },
   "author": "quassy",
   "homepage_url": "https://quassy.github.io/pwdhash/",
-  "version": "2.3.0",
+  "version": "2.2.0",
   "permissions": ["tabs", "activeTab"],
   "default_locale": "en",
 
@@ -19,23 +19,12 @@
     "browser_style": true,
     "default_popup": "index.html"
   },
-  "sidebar_action": {
-    "default_icon": "favicon.ico",
-    "default_title" : "__MSG_actionSidebar__",
-    "default_panel": "index.html"
-  },
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "F8"
+        "default": "Alt+P"
       },
       "description": "__MSG_shortcutPopup__"
-    },
-    "_execute_sidebar_action": {
-      "suggested_key": {
-        "default": "Ctrl+F8"
-      },
-      "description": "__MSG__shortcutSidebar__"
     }
   }
 }
