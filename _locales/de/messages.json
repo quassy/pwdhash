@@ -2,7 +2,6 @@
   "extensionName": {
     "message": "PwdHash-Sidebar"
   },
-
   "extensionDescription": {
     "message": "Erzeuge Seiten-spezifische Passwörter in einer Box"
   },
@@ -36,10 +35,10 @@
   },
 
   "actionPopup": {
-    "message": "PwdHash-Popup (F8)"
+    "message": "PwdHash (F8)"
   },
   "actionSidebar": {
-    "message": "PwdHash-Sidebar (Strg+F8)"
+    "message": "PwdHash"
   },
 
   "shortcutPopup": {

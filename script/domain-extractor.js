@@ -13,7 +13,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 /*
  * Domain name extractor. Turns host names into domain names
  * Adapted from Chris Zarate's public domain genpass tool:
- *  http://labs.zarate.org/passwd/
+ * http://labs.zarate.org/passwd/
  */
     
 function SPH_DomainExtractor() { }

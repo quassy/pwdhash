@@ -14,13 +14,21 @@
   "default_locale": "en",
 
   "browser_action": {
-    "default_icon": "favicon.ico",
-    "default_title" : "__MSG_actionPopup__",
     "browser_style": true,
+    "default_icon": {
+      "16": "icon_16.png",
+      "32": "icon_32.png",
+      "64": "icon_64.png"
+    },
+    "default_title" : "__MSG_actionPopup__",
     "default_popup": "index.html"
   },
   "sidebar_action": {
-    "default_icon": "favicon.ico",
+    "default_icon": {
+      "16": "icon_16.png",
+      "32": "icon_32.png",
+      "64": "icon_64.png"
+    },
     "default_title" : "__MSG_actionSidebar__",
     "default_panel": "index.html"
   },

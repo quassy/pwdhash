@@ -2,7 +2,6 @@
   "extensionName": {
     "message": "PwdHash Sidebar"
   },
-
   "extensionDescription": {
     "message": "Generate per-site passwords in a box"
   },
@@ -36,10 +35,10 @@
   },
 
   "actionPopup": {
-    "message": "PwdHash Popup (F8)"
+    "message": "PwdHash (F8)"
   },
   "actionSidebar": {
-    "message": "PwdHash Sidebar (Ctrl+F8)"
+    "message": "PwdHash"
   },
 
   "shortcutPopup": {
