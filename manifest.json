@@ -9,7 +9,7 @@
   },
   "author": "quassy",
   "homepage_url": "https://quassy.github.io/pwdhash/",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "permissions": ["tabs", "activeTab"],
   "default_locale": "en",
 

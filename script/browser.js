@@ -32,7 +32,11 @@ function generate()
 /*
  * Initialize page with default hashing parameters and add listeners to generate
  */
-initForm = function () {
+initForm = function (event) {
+  // Only initizialize when main document is loaded
+  if (event.originalTarget.nodeName !== "#document") {
+    return;
+  }
   if (typeof chrome != "undefined" && typeof chrome.tabs != "undefined") {
     chrome.tabs.query({'currentWindow': true, 'active': true}, function (tabs) {
       document.getElementById("domain").value = (new SPH_DomainExtractor()).extractDomain(tabs[0].url);
@@ -71,16 +75,23 @@ initForm = function () {
     }
   });
 
-  // i18n
-  document.querySelectorAll('[for="domain"]')[0].textContent   = browser.i18n.getMessage("addressLabel");
-  document.getElementById("domain").placeholder                = browser.i18n.getMessage("addressPlaceholder");
-  document.querySelectorAll('[for="password"]')[0].textContent = browser.i18n.getMessage("passwordLabel");
-  document.getElementById("password").placeholder              = browser.i18n.getMessage("passwordPlaceholder");
-  document.querySelectorAll('[for="hash"]')[0].textContent     = browser.i18n.getMessage("pwdhashLabel");
-  document.getElementById("hash").placeholder                  = browser.i18n.getMessage("pwdhashPlaceholder");
-  document.getElementById("readme").textContent                = browser.i18n.getMessage("readmeText");
-  document.getElementById("readme").title                      = browser.i18n.getMessage("readmeTitle");
-  document.getElementById("readme").href                       = browser.i18n.getMessage("readmeUrl");
+  if (typeof browser != "undefined" && typeof browser.i18n != "undefined") {
+    // i18n
+    document.querySelectorAll('[for="domain"]')[0].textContent   = browser.i18n.getMessage("addressLabel");
+    document.getElementById("domain").placeholder                = browser.i18n.getMessage("addressPlaceholder");
+    document.querySelectorAll('[for="password"]')[0].textContent = browser.i18n.getMessage("passwordLabel");
+    document.getElementById("password").placeholder              = browser.i18n.getMessage("passwordPlaceholder");
+    document.querySelectorAll('[for="hash"]')[0].textContent     = browser.i18n.getMessage("pwdhashLabel");
+    document.getElementById("hash").placeholder                  = browser.i18n.getMessage("pwdhashPlaceholder");
+    document.getElementById("readme").textContent                = browser.i18n.getMessage("readmeText");
+    document.getElementById("readme").title                      = browser.i18n.getMessage("readmeTitle");
+    document.getElementById("readme").href                       = browser.i18n.getMessage("readmeUrl");
+    document.getElementById("tablink").textContent               = browser.i18n.getMessage("weblinkText");
+    document.getElementById("tablink").title                     = browser.i18n.getMessage("weblinkTitle");
+  }
+  else {
+    // TODO Web i8n
+  }
 }
 
 window.addEventListener("load", initForm);

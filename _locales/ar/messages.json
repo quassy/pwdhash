@@ -1,43 +1,43 @@
 {
   "extensionName": {
-    "message": "PwdHash-Sidebar"
+    "message": "PwdHash Sidebar"
   },
   "extensionDescription": {
-    "message": "Erzeuge Seiten-spezifische Passwörter in einer Box"
+    "message": "Generate per-site passwords in a box"
   },
 
  "addressLabel": {
-    "message": "Adresse"
+    "message": "Address"
   },
  "addressPlaceholder": {
-    "message": "https://www.beispiel.com/"
+    "message": "https://www.example.com/"
   },
   "passwordLabel": {
-    "message": "Passwort"
+    "message": "كلمة المرور"
   },
   "passwordPlaceholder": {
-    "message": "Passwort"
+    "message": "كلمة المرور"
   },
   "pwdhashLabel": {
     "message": "PwdHash"
   },
   "pwdhashPlaceholder": {
-    "message": "Zum Erzeugen tippen"
+    "message": "Type to generate"
   },
   "readmeText": {
-    "message": "Liesmich"
+    "message": "Readme"
   },
   "readmeTitle": {
-    "message": "Lerne wie diese Erweiterung funktioniert"
+    "message": "Learn how this extension works"
   },
   "readmeUrl": {
-    "message": "https://github.com/quassy/pwdhash/blob/gh-pages/README.de.md"
+    "message": "https://github.com/quassy/pwdhash/blob/gh-pages/README.md"
   },
   "tablinkText": {
     "message": "Tab"
   },
   "tablinkTitle": {
-    "message": "Benutze die Erweiterung im Tab"
+    "message": "Use extension in tab"
   },
 
   "actionPopup": {
@@ -48,9 +48,9 @@
   },
 
   "shortcutPopup": {
-    "message": "Öffne PwdHash-Popup"
+    "message": "Open PwdHash Popup"
   },
   "shortcutSidebar": {
-    "message": "Öffne PwdHash-Sidebar"
+    "message": "Open PwdHash Sidebar"
   }
 }

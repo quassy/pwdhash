@@ -3,41 +3,41 @@
     "message": "PwdHash-Sidebar"
   },
   "extensionDescription": {
-    "message": "Erzeuge Seiten-spezifische Passwörter in einer Box"
+    "message": "Genereer wachtwoords voor elk webpagina in een box"
   },
 
  "addressLabel": {
-    "message": "Adresse"
+    "message": "Adres"
   },
  "addressPlaceholder": {
-    "message": "https://www.beispiel.com/"
+    "message": "https://www.voorbeeld.com/"
   },
   "passwordLabel": {
-    "message": "Passwort"
+    "message": "Wachtwoord"
   },
   "passwordPlaceholder": {
-    "message": "Passwort"
+    "message": "Wachtwoord"
   },
   "pwdhashLabel": {
     "message": "PwdHash"
   },
   "pwdhashPlaceholder": {
-    "message": "Zum Erzeugen tippen"
+    "message": "Type om te genereren"
   },
   "readmeText": {
-    "message": "Liesmich"
+    "message": "Leesmij"
   },
   "readmeTitle": {
-    "message": "Lerne wie diese Erweiterung funktioniert"
+    "message": "Leer hoe deze extensie functioneert"
   },
   "readmeUrl": {
-    "message": "https://github.com/quassy/pwdhash/blob/gh-pages/README.de.md"
+    "message": "https://github.com/quassy/pwdhash/blob/gh-pages/README.md"
   },
   "tablinkText": {
     "message": "Tab"
   },
   "tablinkTitle": {
-    "message": "Benutze die Erweiterung im Tab"
+    "message": "Gebruik deze extensie in een tab"
   },
 
   "actionPopup": {
@@ -46,11 +46,10 @@
   "actionSidebar": {
     "message": "PwdHash"
   },
-
   "shortcutPopup": {
-    "message": "Öffne PwdHash-Popup"
+    "message": "Open PwdHash-Popup"
   },
   "shortcutSidebar": {
-    "message": "Öffne PwdHash-Sidebar"
+    "message": "Open PwdHash-Sidebar"
   }
 }
