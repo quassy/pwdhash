@@ -7,7 +7,7 @@
   },
 
  "addressLabel": {
-    "message": "Address"
+    "message": "رابط"
   },
  "addressPlaceholder": {
     "message": "https://www.example.com/"
@@ -25,7 +25,7 @@
     "message": "Type to generate"
   },
   "readmeText": {
-    "message": "Readme"
+    "message": "التمهيدي"
   },
   "readmeTitle": {
     "message": "Learn how this extension works"
@@ -34,7 +34,7 @@
     "message": "https://github.com/quassy/pwdhash/blob/gh-pages/README.md"
   },
   "tablinkText": {
-    "message": "Tab"
+    "message": "علامة تبويب، لسان"
   },
   "tablinkTitle": {
     "message": "Use extension in tab"
